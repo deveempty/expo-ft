@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
 
+
 const background = require("./assets/images/background-image.png")
 
 // Components
@@ -14,8 +15,8 @@ export default function App() {
         <ImageView img={background}/>
       </View>
       <View style={styles.footerContainer}>
-        <Button label={"Hello"}/>
-        <Button label={"Hello"}/>
+        <Button theme={"primary"} label={"Upload picture"}/>
+        <Button label={"Use this picture"}/>
       </View>
       <StatusBar style="auto" />
     </View>
